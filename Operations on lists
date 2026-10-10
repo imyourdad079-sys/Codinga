@@ -1,0 +1,45 @@
+# ==================================
+# --- School Class Organiser ---
+# ==================================
+
+
+classmates = ["Ali", "Zaid", "Hamza", "Umer", "Abban"]
+print("Class list:", classmates)
+
+
+print("Total students:", len(classmates))
+print("First student:", classmates[0])
+print("Last student:", classmates[-1])
+print("First three:", classmates[:3])
+
+
+classmates.append("Muawayiah")
+print('\nAfter adding Muawiyah:', classmates)
+
+classmates.remove('Hamza')
+print('\nAfter removing Hamza:', classmates)
+
+classmates.sort()
+print('\nSorted Alphabetically:', classmates)
+
+classmates.reverse()
+print('Revesred:', classmates)
+
+
+teacher = {"name": "Mr.Sharukh", "Subject": "Chemistry", "Experience": 5}
+print('\nTeacher profile:', teacher)
+
+print('Subject:', teacher["Subject"])
+print('Experience:', teacher.get("experience", "Not Found"))
+teacher["Experience"] = 7
+teacher["Email"] = "sharukh@school.com"
+teacher.pop("Experience")
+print('Upadated teacher profile:', teacher)
+
+
+roll_numbers = [1,2,3,4,5]
+names = ['Ali', 'Zaid', 'Umer', 'Abban', 'Muawayiah']
+student_directory = dict(zip(roll_numbers, names))
+
+print('\nStudent Directory:', student_directory)
+print('Student at roll no.3:', student_directory[4])
